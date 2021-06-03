@@ -1,0 +1,93 @@
+  .homepage,
+  .hlavicka {
+    width: calc(100vw - 4rem);
+    margin: 0 0 0 auto;
+    padding: 0 17vw;
+  }
+
+
+.hlavicka__container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+}
+
+.hlavicka__navigace {
+  position: absolute;
+  top: 50px;;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  text-align: right;
+}
+
+.hlavicka__navigace a {
+  padding: 5px;
+
+}  
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+
+
+.hlavicka__logo {
+  font-weight: bold;
+}
+
+
+h1 {
+  font-size: 50px;
+}
+@media (max-width: 575px) {
+  .hlavicka__navigace--zavreno {
+    display: none;
+  } 
+}
+
+
+@media (min-width: 576px) {
+  .hlavicka__navigace {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hlavicka__hamburger {
+    display: none;
+  }
+
+  .homepage__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh
+  }
+
+  .homepage__galerie {
+    width: 45%;
+  }
+
+  .homepage__content {
+    width: 45%;
+  }
+  
+  .homepage__text {
+    line-height: 1.6;
+  }
+
+  .homepage_section1 {
+    display: flex;
+  }
+}
+
+
+
+
