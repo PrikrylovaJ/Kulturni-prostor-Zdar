@@ -3,6 +3,6 @@ import './style.css';
 
 export const Vystavy = () => {
   return (
-    <h2>Stránka o výstavách</h2>
+    <h2>Výstavy</h2>
   )
 };
