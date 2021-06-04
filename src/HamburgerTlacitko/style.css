@@ -7,7 +7,7 @@
 	background-color: transparent;
 }
 
-.hamburger span {
+/* .hamburger span {
 	position: absolute;
 	top: calc(50% - 2px);
 	left: 0;
@@ -36,4 +36,12 @@
 
 .hamburger--otevrene span:nth-child(3) {
 	transform: rotate(-45deg);
+} */
+
+.menu {
+	background-color: transparent;
+  /* background-size: contain; */
+  border: none;
+  width: 2rem;
+  height: 2rem;
 }

@@ -13,7 +13,8 @@ export const Uvodni = () => {
               <p className="homepage__text">Originální prostor pro umělecké aktivity všech kulturymilovných ve
                   čtvrti, kde to žije! Pořádáme výstavy, kurzy, koncerty, přednášky.
                   Nezbytností je útulná kavárna pro tvorbu i neformální setkání. Prostor
-                  je k dispozici i pro vaše akce.</p>
+                  je k dispozici i pro vaše akce.
+              </p>
             </div>
             <div className="homepage__galerie">
               <div className="homepage_section1">
