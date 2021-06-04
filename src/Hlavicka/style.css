@@ -1,9 +1,9 @@
-  .homepage,
-  .hlavicka {
-    width: calc(100vw - 4rem);
-    margin: 0 0 0 auto;
-    padding: 0 17vw;
-  }
+
+.hlavicka {
+  width: calc(100vw - 4rem);
+  margin: 0 0 0 auto;
+  padding: 0 17vw;
+}
 
 
 .hlavicka__container {
@@ -45,6 +45,7 @@ nav a {
 h1 {
   font-size: 50px;
 }
+
 @media (max-width: 575px) {
   .hlavicka__navigace--zavreno {
     display: none;
@@ -61,30 +62,6 @@ h1 {
 
   .hlavicka__hamburger {
     display: none;
-  }
-
-  .homepage__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh
-  }
-
-  .homepage__galerie {
-    width: 45%;
-  }
-
-  .homepage__content {
-    width: 45%;
-  }
-  
-  .homepage__text {
-    line-height: 1.6;
-  }
-
-  .homepage_section1 {
-    display: flex;
   }
 }
 
