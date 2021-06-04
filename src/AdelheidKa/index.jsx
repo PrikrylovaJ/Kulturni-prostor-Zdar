@@ -1,4 +1,7 @@
-import React from 'react';
+// import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { db } from '../db';
+import { Formular } from '../Formular';
 import './style.css';
 
 // const vystavy = [
@@ -12,6 +15,22 @@ import './style.css';
 // ]
 
 export const AdelheidKa = () => {
+  const [recenze, setRecenze] = useState([]);
+
+  useEffect(() => {
+    db.collection('vystavy').onSnapshot((snapshot) => {
+      snapshot.docs.forEach((doc) => {
+        console.log(doc.data())
+      })
+      setRecenze(
+        snapshot.docs.map((doc) => {
+          const data = doc.data();
+          data.id = doc.id
+          return data
+      }))
+    })
+  }, [])
+
   return (
     <>
       <h2>Adelheid Ka</h2>
@@ -20,6 +39,8 @@ export const AdelheidKa = () => {
       <p>V jejich obrazech se promítají životní příběhy i prožitky, především ve figurální malbě a imaginární krajinomalbě. Její velkou inspirací je také příroda, která jí učí světlu, perspektivě, tvarům i rozmanitosti barev. Náměty na obrazy zkrátka nemusím složitě hledat, jsou všude kolem. Stačí je vnímat a nechat pracovat představivost.</p>
       <img src="/assets/Adelheid Ka/AdelheidKa3.jpg" width="450px" height="450px" alt="" />
       <button>Vstupenky</button>
+      {recenze.map((recen) => <div key={recen.id}>{recen.nazev}</div>)}
+      <Formular/>
     </>
   );
 };
