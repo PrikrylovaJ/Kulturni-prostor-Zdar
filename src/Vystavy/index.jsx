@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import {Link} from 'react-router-dom';
 
 export const Vystavy = () => {
   return (
@@ -9,7 +10,7 @@ export const Vystavy = () => {
         <div className="exhibition-container">
           <div className="exhibiton-card">
             <img className="exhibition-card__image" src="/assets/Adelheid Ka/Adelheidka2.jpg" height="200px" width="280px" alt=""/>
-            <a className="exhibition-card__author" href="adelheid.html">Adelheid Ka</a>
+            <Link className="exhibition-card__author" to="adelheidka">Adelheid Ka</Link>
             <p className="exhibition-card__title">Vernisáž</p>
             <p className="exhibition-card__date">2. čer. - 30. čer.2021</p>
             <p className="exhibition-card__place">Praha - Kulturní prostor Zdar</p>

@@ -11,6 +11,7 @@ import { Hlavicka } from './Hlavicka';
 import { Kontakt } from './Kontakt';
 import { Onas } from './O nas';
 import { Vystavy } from './Vystavy';
+import { AdelheidKa } from './AdelheidKa';
 import './style.css';
 
 const App = () => {
@@ -32,6 +33,9 @@ const App = () => {
         </Route>
         <Route path="/vystavy" exact>
           <Vystavy/>
+        </Route>
+        <Route path="/adelheidka" exact>
+          <AdelheidKa/>
         </Route>
       </Switch>
     </Router>

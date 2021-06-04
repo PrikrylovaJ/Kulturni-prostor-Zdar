@@ -41,35 +41,4 @@ export const Hlavicka = () => {
 
 
 
-// -------------puvodni reseni---------------
 
-
-// import React, {useState} from 'react';
-// import './style.css';
-// import { HamburgerTlacitko } from "../HamburgerTlacitko";
-
-
-
-// export const Hlavicka = () => {
-//   const [jeOtevreno, setJeOtevreno] = useState(false);
-
-//   const handleKliknaHamburger = () => {
-//    setJeOtevreno(!jeOtevreno);
-//   }
-
-//   return (
-//     <header className="hlavicka">
-//       <div className="hlavicka__burger">
-//         <HamburgerTlacitko 
-//           jeOtevreno={jeOtevreno}
-//           onClick={handleKliknaHamburger}
-//         />
-//       </div>
-//       <nav className={jeOtevreno ? "hlavicka__navigace": 'hlavicka__navigace hlavicka__navigace--zavreno'}>
-//         <a href="/">Domů</a>
-//         <a href="/kontakt">Kontakt</a>
-//         <a href="/o-nas">O nás</a>
-//       </nav>
-//     </header>
-//   );
-// };
