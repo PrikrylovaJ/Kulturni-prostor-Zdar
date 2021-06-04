@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import {Link} from 'react-router-dom';
 
 export const Uvodni = () => {
   return (
@@ -16,7 +17,7 @@ export const Uvodni = () => {
             </div>
             <div className="homepage__galerie">
               <div className="homepage_section1">
-                <h2>Výstavy</h2>
+                <Link to="/vystavy">Výstavy</Link>
                 <img src="/assets/arrow.png" width="50px" alt="" />
               </div>
               <img src="/assets/adelka3.jpg" width="50%" alt="" />
