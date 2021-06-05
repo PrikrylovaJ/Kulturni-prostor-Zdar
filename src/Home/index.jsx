@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
 
-export const Uvodni = () => {
+export const Homepage = () => {
   return (
     <>
       <main>
@@ -19,7 +19,7 @@ export const Uvodni = () => {
             </div>
             <div className="homepage__galerie">
               <div className="homepage_section exhibitions">
-                <Link to="/vystavy">
+                <Link to="/exhibitions">
                   <h2>Výstavy</h2>
                   {/*<img src="/assets/Ostatni/arrow.png" alt="" />*/}
 

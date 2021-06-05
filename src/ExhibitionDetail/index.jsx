@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../db';
-import { Formular } from '../Formular';
+import { Form } from '../Formular';
 import { exhibitions } from '../Data';
 import './style.css';
 import { useParams } from 'react-router-dom';
@@ -20,7 +20,6 @@ export const ExhibitionDetail = () => {
   useEffect(() => {
     db.collection('review').onSnapshot((snapshot) => {
       snapshot.docs.forEach((doc) => {
-        console.log(doc.data());
       });
       setReview(
         snapshot.docs.map((doc) => {
@@ -55,7 +54,7 @@ export const ExhibitionDetail = () => {
           <div>{item.date?.toDate().toString()}</div>
         </div>
       ))}
-      <Formular />
+      <Form />
     </>
   );
 };
