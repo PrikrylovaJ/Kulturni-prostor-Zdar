@@ -25,8 +25,7 @@ export const Uvodni = () => {
 
                   <img
                     src="/assets/Adelheid Ka/AdelheidKa3.jpg"
-                    width="50%"
-                    alt=""
+                    alt="obrazek_vystavy"
                   />
                 </Link>
               </div>
@@ -36,15 +35,17 @@ export const Uvodni = () => {
 
                 <img
                   src="/assets/Adelheid Ka/AdelheidKa4.jpg"
-                  width="50%"
-                  alt=""
+                  alt="obrazek_interieru"
                 />
               </div>
               <div className="homepage_section courses">
                 <h2>Kurzy</h2>
                 {/*<img src="/assets/Ostatni/arrow.png" width="50px" alt="" />*/}
 
-                <img src="/assets/Ostatni/courses.jpg" width="50%" alt="" />
+                <img
+                  src="/assets/Ostatni/courses.jpg"
+                  alt="obrazek_vytvarneho_kurzu"
+                />
               </div>
             </div>
           </div>
