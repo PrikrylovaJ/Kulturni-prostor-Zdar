@@ -10,8 +10,8 @@ import { Uvodni } from './Home';
 import { Hlavicka } from './Hlavicka';
 import { Kontakt } from './Kontakt';
 import { Onas } from './O nas';
-import { Vystavy } from './Vystavy';
-import { AdelheidKa } from './AdelheidKa';
+import { Exhibitions } from './Exhibitions';
+import { ExhibitionDetail } from './ExhibitionDetail';
 import './style.css';
 
 const App = () => {
@@ -28,14 +28,11 @@ const App = () => {
         <Route path="/o-nas" exact>
           <Onas/>
         </Route>
-        <Route path="/o-nas" exact>
-          <Onas/>
+        <Route path="/exhibitions" exact>
+          <Exhibitions/>
         </Route>
-        <Route path="/vystavy" exact>
-          <Vystavy/>
-        </Route>
-        <Route path="/adelheidka" exact>
-          <AdelheidKa/>
+        <Route path="/exhibitions/:idExhibition" exact>
+          <ExhibitionDetail/>
         </Route>
       </Switch>
     </Router>

@@ -19,7 +19,7 @@ export const Uvodni = () => {
             </div>
             <div className="homepage__galerie">
               <div className="homepage_section1">
-                <Link to="/vystavy">Výstavy</Link>
+                <Link to="/exhibitions">Výstavy</Link>
                 <img src="/assets/Ostatni/arrow.png" width="50px" alt="" />
               </div>
               <img
