@@ -4,6 +4,7 @@ import { Form } from '../Formular';
 import { exhibitions } from '../Data';
 import './style.css';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ImageGallery from 'react-image-gallery';
 
 export const ExhibitionDetail = () => {
@@ -47,6 +48,7 @@ export const ExhibitionDetail = () => {
         />
       </div>
       <button>Vstupenky</button>
+      <Link to="/tickets">Vstupenky</Link>
       {review.map((item) => (
         <div key={item.id}>
           <div>{item.name}</div>
