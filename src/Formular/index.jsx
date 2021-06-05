@@ -2,22 +2,32 @@ import React, {useState} from 'react';
 import {db} from '../db';
 
 export const Formular = () => {
-  const [nazev, setNazev] = useState('');
+  const [name, setName] = useState('');
+  const [text, setText] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    db.collection('vystavy').add({
-      nazev: nazev
+    db.collection('review').add({
+      name: name,
+      text: text,
+      date: new Date()
     })
   }
  
   return <form onSubmit={handleSubmit}>
     <label>
+      Jméno:
+    </label>
+    <input 
+      value={name} 
+      onChange={(event) => setName(event.target.value)} type="text" 
+    />
+    <label>
       Recenze:
     </label>
     <input 
-      value={nazev} 
-      onChange={(event) => setNazev(event.target.value)} type="text" 
+      value={text} 
+      onChange={(event) => setText(event.target.value)} type="text" 
     />
     {" "}
     <button>Přidat recenzi</button>

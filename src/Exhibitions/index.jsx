@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ExhibitionCard } from './ExhibitionCard';
 import { exhibitions } from '../Data';
 
+
 export const Exhibitions = () => {
   return (
     <section>
