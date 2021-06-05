@@ -6,7 +6,7 @@ import {
   Link
 } from 'react-router-dom';
 import { render } from 'react-dom';
-import { Uvodni } from './Home';
+import { Homepage } from './Home';
 import { Hlavicka } from './Hlavicka';
 import { Kontakt } from './Kontakt';
 import { Onas } from './O nas';
@@ -20,7 +20,7 @@ const App = () => {
       <Hlavicka/>
       <Switch>
         <Route path="/" exact>
-          <Uvodni/>
+          <Homepage/>
         </Route>
         <Route path="/kontakt" exact>
           <Kontakt/>

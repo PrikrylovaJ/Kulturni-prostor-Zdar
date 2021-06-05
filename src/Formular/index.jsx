@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {db} from '../db';
 
-export const Formular = () => {
+export const Form = () => {
   const [name, setName] = useState('');
   const [text, setText] = useState('');
 
