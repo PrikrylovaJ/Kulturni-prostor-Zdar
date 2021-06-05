@@ -18,7 +18,7 @@ export const Uvodni = () => {
               </p>
             </div>
             <div className="homepage__galerie">
-              <div className="homepage_section1">
+              <div className="homepage_section exhibitions">
                 <Link to="/vystavy">Výstavy</Link>
                 {/*<img src="/assets/Ostatni/arrow.png" alt="" />*/}
 
@@ -28,7 +28,7 @@ export const Uvodni = () => {
                   alt=""
                 />
               </div>
-              <div className="homepage_section1">
+              <div className="homepage_section rent">
                 <h2>Pronájem prostor</h2>
                 {/* <img src="/assets/Ostatní/arrow.png" width="50px" alt="" />*/}
 
@@ -38,7 +38,7 @@ export const Uvodni = () => {
                   alt=""
                 />
               </div>
-              <div className="homepage_section1">
+              <div className="homepage_section courses">
                 <h2>Kurzy</h2>
                 {/*<img src="/assets/Ostatni/arrow.png" width="50px" alt="" />*/}
 

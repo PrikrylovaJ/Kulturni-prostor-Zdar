@@ -20,14 +20,15 @@ h1 {
 }
 
 img {
-  width: 100%;
+  width: 320px;
+  height: 220px;
 }
 
 h2 {
   margin-bottom: 0;
 }
 
-.homepage_section1 {
+.homepage_section {
   margin-bottom: 1.5rem;
 }
 
