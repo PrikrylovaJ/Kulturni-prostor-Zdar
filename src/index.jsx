@@ -12,6 +12,7 @@ import { Kontakt } from './Kontakt';
 import { Onas } from './O nas';
 import { Exhibitions } from './Exhibitions';
 import { ExhibitionDetail } from './ExhibitionDetail';
+import { Footer } from './Footer';
 import './style.css';
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
           <ExhibitionDetail/>
         </Route>
       </Switch>
+      <Footer/>
     </Router>
   )
 };
