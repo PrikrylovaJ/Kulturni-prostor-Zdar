@@ -4,6 +4,16 @@
   font-family: 'Space Grotesk', sans-serif;
 }
 
+.homepage_section a {
+  text-decoration: none;
+  color: black;
+}
+
+.homepage_section:hover {
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1.2);
+}
+
 h1 {
   margin-left: -2rem;
   margin-top: 6rem;
