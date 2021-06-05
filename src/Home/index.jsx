@@ -19,14 +19,16 @@ export const Uvodni = () => {
             </div>
             <div className="homepage__galerie">
               <div className="homepage_section exhibitions">
-                <Link to="/exhibitions">Výstavy</Link>
-                {/*<img src="/assets/Ostatni/arrow.png" alt="" />*/}
+                <Link to="/vystavy">
+                  <h2>Výstavy</h2>
+                  {/*<img src="/assets/Ostatni/arrow.png" alt="" />*/}
 
-                <img
-                  src="/assets/Adelheid Ka/AdelheidKa3.jpg"
-                  width="50%"
-                  alt=""
-                />
+                  <img
+                    src="/assets/Adelheid Ka/AdelheidKa3.jpg"
+                    width="50%"
+                    alt=""
+                  />
+                </Link>
               </div>
               <div className="homepage_section rent">
                 <h2>Pronájem prostor</h2>

@@ -1,21 +1,11 @@
-.hlavicka {
-  font-family: 'Space Grotesk', sans-serif;
-}
-
 .hlavicka__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   padding: 10px;
-  margin-left: 5%;
-  margin-right: 4%;
-}
 
-@media screen and (max-width: 430px) {
-  .hlavicka__container {
-    margin-right: 2%;
-  }
+  margin-right: 5%;
 }
 
 .hlavicka__navigace {
@@ -47,8 +37,12 @@ nav a {
   padding: 5px;
 }
 
-h1 {
+.hlavicka h1 {
   font-size: 50px;
+}
+
+.hlavicka__hamburger {
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 575px) {
