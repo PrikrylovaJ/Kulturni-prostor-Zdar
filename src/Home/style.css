@@ -26,7 +26,6 @@ h1 {
 .homepage__text {
   font-size: 1rem;
   text-align: right;
-
   margin-left: 4rem;
 }
 
@@ -47,6 +46,40 @@ h2 {
 
 .homepage_section {
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    width: 1.5rem;
+  }
+
+  .homepage__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+  }
+
+  .homepage__galerie {
+    width: 45%;
+    margin-top: 0;
+  }
+
+  .homepage__content {
+    width: 50%;
+  }
+
+  .homepage__text {
+    line-height: 1.6;
+    font-size: 1.5rem;
+  }
+
+  .homepage_section1 {
+    display: flex;
+  }
 }
 
 /*
@@ -100,29 +133,3 @@ h2 {
 }
 
 */
-
-@media (min-width: 576px) {
-  .homepage__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-  }
-
-  .homepage__galerie {
-    width: 45%;
-  }
-
-  .homepage__content {
-    width: 45%;
-  }
-
-  .homepage__text {
-    line-height: 1.6;
-  }
-
-  .homepage_section1 {
-    display: flex;
-  }
-}
