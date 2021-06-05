@@ -1,9 +1,51 @@
 .homepage {
   width: calc(100vw - 4rem);
-  margin: 0 0 0 auto;
   padding: 0 17vw;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
+h1 {
+  margin-left: -2rem;
+  margin-top: 5rem;
+}
+
+.homepage__text {
+  margin-left: 55%;
+  text-align: right;
+  width: 250px;
+}
+
+.homepage__galerie {
+  margin-top: 3rem;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.homepage_section1 {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .homepage__text {
+    margin-left: 40%;
+  }
+}
+
+/*
+.homepage__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+*/
 
 @media (min-width: 576px) {
   .homepage__container {
@@ -11,7 +53,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100vh
+    height: 100vh;
   }
 
   .homepage__galerie {
@@ -21,7 +63,7 @@
   .homepage__content {
     width: 45%;
   }
-  
+
   .homepage__text {
     line-height: 1.6;
   }
