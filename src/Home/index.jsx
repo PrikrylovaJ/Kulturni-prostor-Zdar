@@ -18,33 +18,32 @@ export const Uvodni = () => {
               </p>
             </div>
             <div className="homepage__galerie">
-              <div className="homepage_section1">
+              <div className="homepage_section exhibitions">
                 <Link to="/exhibitions">Výstavy</Link>
-                <img src="/assets/Ostatni/arrow.png" width="50px" alt="" />
+                {/*<img src="/assets/Ostatni/arrow.png" alt="" />*/}
+
+                <img
+                  src="/assets/Adelheid Ka/AdelheidKa3.jpg"
+                  width="50%"
+                  alt=""
+                />
               </div>
-              <img
-                src="/assets/Adelheid Ka/AdelheidKa3.jpg"
-                width="50%"
-                alt=""
-              />
-              <div className="homepage_section1">
+              <div className="homepage_section rent">
                 <h2>Pronájem prostor</h2>
-                <img src="/assets/Ostatní/arrow.png" width="50px" alt="" />
+                {/* <img src="/assets/Ostatní/arrow.png" width="50px" alt="" />*/}
+
+                <img
+                  src="/assets/Adelheid Ka/AdelheidKa4.jpg"
+                  width="50%"
+                  alt=""
+                />
               </div>
-              <img
-                src="/assets/Adelheid Ka/AdelheidKa4.jpg"
-                width="50%"
-                alt=""
-              />
-              <div className="homepage_section1">
+              <div className="homepage_section courses">
                 <h2>Kurzy</h2>
-                <img src="/assets/Ostatni/arrow.png" width="50px" alt="" />
+                {/*<img src="/assets/Ostatni/arrow.png" width="50px" alt="" />*/}
+
+                <img src="/assets/Ostatni/courses.jpg" width="50%" alt="" />
               </div>
-              <img
-                src="/assets/Adelheid Ka/AdelheidKa5.jpg"
-                width="50%"
-                alt=""
-              />
             </div>
           </div>
         </section>

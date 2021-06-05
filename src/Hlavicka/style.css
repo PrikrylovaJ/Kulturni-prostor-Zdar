@@ -1,3 +1,6 @@
+.hlavicka {
+  font-family: 'Space Grotesk', sans-serif;
+}
 
 .hlavicka__container {
   display: flex;
@@ -5,6 +8,14 @@
   align-items: center;
   position: relative;
   padding: 10px;
+  margin-left: 5%;
+  margin-right: 4%;
+}
+
+@media screen and (max-width: 430px) {
+  .hlavicka__container {
+    margin-right: 2%;
+  }
 }
 
 .hlavicka__navigace {
@@ -20,8 +31,7 @@
 
 .hlavicka__navigace a {
   padding: 5px;
-
-}  
+}
 
 nav a {
   text-decoration: none;
@@ -31,13 +41,11 @@ nav a {
   font-size: 20px;
 }
 
-
 .hlavicka__logo {
   font-weight: bold;
   font-size: 20px;
   padding: 5px;
 }
-
 
 h1 {
   font-size: 50px;
@@ -46,9 +54,8 @@ h1 {
 @media (max-width: 575px) {
   .hlavicka__navigace--zavreno {
     display: none;
-  } 
+  }
 }
-
 
 @media (min-width: 576px) {
   .hlavicka__navigace {
@@ -61,7 +68,3 @@ h1 {
     display: none;
   }
 }
-
-
-
-
