@@ -19,14 +19,9 @@ export const Uvodni = () => {
             </div>
             <div className="homepage__galerie">
               <div className="homepage_section exhibitions">
-<<<<<<< HEAD
                 <Link to="/vystavy">
                   <h2>Výstavy</h2>
                   {/*<img src="/assets/Ostatni/arrow.png" alt="" />*/}
-=======
-                <Link to="/exhibitions">Výstavy</Link>
-                {/*<img src="/assets/Ostatni/arrow.png" alt="" />*/}
->>>>>>> 645f6eca7d96fb34ac77fc5a521cc0889b12c517
 
                   <img
                     src="/assets/Adelheid Ka/AdelheidKa3.jpg"

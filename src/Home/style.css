@@ -1,7 +1,11 @@
-.homepage {
-  width: calc(100vw - 4rem);
-  padding: 0 17vw;
-  font-family: 'Space Grotesk', sans-serif;
+.homepage__container {
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+.homepage_section {
+  text-align: center;
+  transition: transform 0.4s ease-in-out;
 }
 
 .homepage_section a {
@@ -10,13 +14,65 @@
 }
 
 .homepage_section:hover {
-  transition: transform 0.4s ease-in-out;
   transform: scale(1.2);
+}
+
+h1 {
+  margin-top: 6rem;
+  font-size: 1.5rem;
+  width: 1rem;
+}
+
+.homepage__text {
+  font-size: 1rem;
+  text-align: right;
+  max-width: 80%;
+  margin-left: 4rem;
+}
+
+.homepage__galerie {
+  margin-top: 3rem;
+  width: calc(100% - 2rem);
+}
+
+img {
+  width: 320px;
+  height: 200px;
+}
+
+h2 {
+  margin-bottom: 0.25rem;
+}
+
+.homepage_section {
+  margin-bottom: 1.5rem;
+}
+
+/*
+.homepage__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 480px) {
+  .homepage__text {
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .hlavicka__container {
+    margin-right: 2%;
+  }
 }
 
 h1 {
   margin-left: -2rem;
   margin-top: 6rem;
+  font-size: 20px;
 }
 
 .homepage__text {
@@ -42,20 +98,6 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-@media screen and (max-width: 480px) {
-  .homepage__text {
-    margin-left: 40%;
-  }
-}
-
-/*
-.homepage__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-}
 */
 
 @media (min-width: 576px) {
