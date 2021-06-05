@@ -42,11 +42,7 @@ export const Uvodni = () => {
                 <h2>Kurzy</h2>
                 {/*<img src="/assets/Ostatni/arrow.png" width="50px" alt="" />*/}
 
-                <img
-                  src="/assets/Adelheid Ka/AdelheidKa5.jpg"
-                  width="50%"
-                  alt=""
-                />
+                <img src="/assets/Ostatni/courses.jpg" width="50%" alt="" />
               </div>
             </div>
           </div>
