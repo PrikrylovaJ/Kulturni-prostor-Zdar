@@ -1,13 +1,21 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
+import { storage } from '../../db';
 
-export const ExhibitionCard = ({image, author, title, date, place, id}) => {
+export const ExhibitionCard = ({image, author, title, dateTo, dateFrom, place, id}) => {
+  const [photoURL, setPhotoURL] = useState(undefined);
+
+  useEffect(() => {
+    storage.ref(image).getDownloadURL().then(url => setPhotoURL(url))
+  }, []);
+
+
   return (
     <div className="exhibiton-card">
       <img
         className="exhibition-card__image"
-        src={image}
+        src={photoURL}
         height="200px"
         width="280px"
         alt=""
@@ -16,7 +24,7 @@ export const ExhibitionCard = ({image, author, title, date, place, id}) => {
         {author}
       </Link>
       <p className="exhibition-card__title">{title}</p>
-      <p className="exhibition-card__date">{date}</p>
+      <p className="exhibition-card__date">{dateFrom.toLocaleDateString()} - {dateTo.toLocaleDateString()}</p>
       <p className="exhibition-card__place">{place}</p>
     </div>
   );
