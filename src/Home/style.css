@@ -88,7 +88,15 @@ h2 {
   .homepage__container {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 60vh;
+  }
+
+  .homepage {
+    margin-left: 15%;
+    margin-right: 15%;
+    max-width: auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .homepage__galerie {
