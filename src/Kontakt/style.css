@@ -2,7 +2,6 @@
   font-size: 20px;
   display: flex;
   justify-content: start;
-  margin-top: 20px;
 }
 
 .team__container {
@@ -17,4 +16,9 @@
 
 .map {
   margin-top: 20px;
+}
+
+.contact__address {
+  margin-top: 40px;
+  font-size: 20px;
 }

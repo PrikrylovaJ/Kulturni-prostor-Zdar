@@ -6,13 +6,7 @@ export const Kontakt = () => {
     <main>
       <div className="contact__content">
         <h1>KULTURNÍ PROSTOR ZDAR</h1>
-        <div className="contacts">
-          <div className="contact__address">
-            <h2>Adresa</h2>
-            <p>U Vinohradského pivovaru 15</p>
-            <p>101 00 Praha 10</p>
-          </div>
-        </div>
+        <div className="contacts"></div>
         <div className="contacts">
           <div className="contact__people">
             <h2>Team</h2>
@@ -48,6 +42,11 @@ export const Kontakt = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="contact__address">
+          <h2>Adresa</h2>
+          <p>U Vinohradského pivovaru 15</p>
+          <p>101 00 Praha 10</p>
         </div>
         <div className="map">
           <iframe
