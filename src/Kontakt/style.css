@@ -11,14 +11,41 @@
 }
 
 .team__member {
-  width: 45%;
+  width: 60%;
 }
 
-.map {
+.map iframe {
   margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  border: 1px;
 }
 
 .contact__address {
   margin-top: 40px;
   font-size: 20px;
+}
+
+@media (min-width: 576px) {
+  .team__member {
+    width: 45%;
+  }
+
+  .map iframe {
+    height: 400px;
+  }
+}
+
+@media (min-width: 991px) {
+  .team__container {
+    justify-content: space-between;
+  }
+
+  .team__member {
+    width: 30%;
+  }
+
+  .map iframe {
+    height: 500px;
+  }
 }

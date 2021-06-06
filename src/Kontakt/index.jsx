@@ -23,7 +23,7 @@ export const Kontakt = () => {
               <br />
               <div className="team__member">
                 <h3>Jana P.</h3>
-                <p>kavárna a catering</p>
+                <p>provoz kavárny a catering, HR</p>
                 <hr />
                 <div className="contact__email__phone">
                   <a href="mailto:janap@kpz.cz">janap@kpz.cz</a>
@@ -50,15 +50,8 @@ export const Kontakt = () => {
         </div>
         <div className="map">
           <iframe
-            className="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.5879614009705!2d14.45531131571783!3d50.07527777942536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b937cdc639dd5%3A0xad415ec9df8865f0!2sVinohradsk%C3%BD%20pivovar!5e0!3m2!1scs!2scz!4v1622978682431!5m2!1scs!2scz"
-            style={{
-              width: '600px',
-              height: '450px',
-              border: '1px',
-              allowFullScreen: '',
-              loading: 'lazy',
-            }}
+            style={{}}
           ></iframe>
         </div>
       </div>
