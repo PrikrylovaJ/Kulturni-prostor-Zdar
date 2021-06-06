@@ -24,6 +24,7 @@
 @media (min-width: 576px) {
   .footer {
     padding: 0 45px;
+    margin-top: 200px;
   }
 
   .footer__address {
@@ -33,5 +34,11 @@
 
   .footer__address p {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 991px) {
+  .footer {
+    margin-top: 400px;
   }
 }

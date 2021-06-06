@@ -1,0 +1,20 @@
+.contacts {
+  font-size: 20px;
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.team__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team__member {
+  width: 45%;
+}
+
+.map {
+  margin-top: 20px;
+}
