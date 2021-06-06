@@ -53,7 +53,7 @@ export const ExhibitionDetail = () => {
       <div className="exhibition-detail__container">
         <div className="exhibition-detail__content">
           <h2>{exhibition.author}</h2>
-          <p>{exhibition.date}</p>
+          <p>{exhibition.dateFrom.toDate().toLocaleDateString()} - {exhibition.dateTo.toDate().toLocaleDateString()}</p>
           {exhibition.text}
           <Link to="/tickets">Vstupenky</Link>
         </div>
@@ -67,6 +67,8 @@ export const ExhibitionDetail = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="exhibition-detail__container">
         <div className="exhibition-detail__review">
           {reviews.map((item) => (
             <div key={item.id}>
@@ -76,6 +78,8 @@ export const ExhibitionDetail = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="exhibition-detail__container">
         <div className="exhibition-detail__form">
           <Form exhibitionId={idExhibition}/>
         </div>
