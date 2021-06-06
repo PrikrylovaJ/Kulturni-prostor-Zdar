@@ -21,23 +21,23 @@ export const Exhibitions = () => {
     });
   }, []);
 
-
-
   return (
-    <section>
+    <main>
       <h1>Výstavy</h1>
-      {exhibitions.map((exhibition) => (
-        <ExhibitionCard
-          image={exhibition.photos[0]}
-          author={exhibition.author}
-          dateTo={exhibition.dateTo.toDate()}
-          dateFrom={exhibition.dateFrom.toDate()}
-          place={exhibition.place}
-          title={exhibition.title}
-          id={exhibition.id}
-          key={exhibition.id}
-        />
-      ))}
-    </section>
+      <div className="exhibition-container">
+        {exhibitions.map((exhibition) => (
+          <ExhibitionCard
+            image={exhibition.photos[0]}
+            author={exhibition.author}
+            dateTo={exhibition.dateTo.toDate()}
+            dateFrom={exhibition.dateFrom.toDate()}
+            place={exhibition.place}
+            title={exhibition.title}
+            id={exhibition.id}
+            key={exhibition.id}
+          />
+        ))}
+      </div>
+    </main>
   );
 };

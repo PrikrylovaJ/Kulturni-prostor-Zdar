@@ -12,12 +12,10 @@ export const ExhibitionCard = ({image, author, title, dateTo, dateFrom, place, i
 
 
   return (
-    <div className="exhibiton-card">
+    <div className="exhibition-card">
       <img
         className="exhibition-card__image"
         src={photoURL}
-        height="200px"
-        width="280px"
         alt=""
       />
       <Link className="exhibition-card__author" to={"exhibitions/" + id}>
