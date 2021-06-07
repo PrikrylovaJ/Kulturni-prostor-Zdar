@@ -1,4 +1,4 @@
-.ikona {
+.icon {
   vertical-align: -4px;
 }
 
@@ -25,11 +25,12 @@ label {
 }
 
 @media screen and (min-width: 576px) {
-  .mp {
+  .mp,
+  .interest {
     text-align: right;
   }
 
-  .prostor__text {
+  .space__text {
     text-align: left;
   }
 
@@ -37,7 +38,7 @@ label {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .foto {
@@ -51,7 +52,7 @@ label {
     width: 25%;
   }
 
-  .foto.vetsi {
+  .foto.bigger {
     width: 50%;
   }
 }

@@ -33,9 +33,13 @@
   font-size: 20px;
 }
 
+.hlavicka__logo::before {
+  content: url('kostka.png');
+}
+
 .hlavicka__logo a {
   text-decoration: none;
-  color: black;
+  color: rgb(81, 81, 140);
 }
 
 .hlavicka h1 {

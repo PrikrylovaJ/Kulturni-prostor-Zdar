@@ -30,7 +30,7 @@ export const Homepage = () => {
                 </Link>
               </div>
               <div className="homepage_section prostor">
-                <Link to="/prostor">
+                <Link to="/space">
                   <h2>Pronájem prostor</h2>
                   {/* <img src="/assets/Ostatní/arrow.png" width="50px" alt="" />*/}
 

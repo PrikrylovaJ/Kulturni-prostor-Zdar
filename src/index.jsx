@@ -9,7 +9,7 @@ import { Exhibitions } from './Exhibitions';
 import { ExhibitionDetail } from './ExhibitionDetail';
 import { Footer } from './Footer';
 import { Tickets } from './Tickets';
-import { Prostor } from './Prostor';
+import { Space } from './Space';
 import './style.css';
 
 const App = () => {
@@ -30,8 +30,8 @@ const App = () => {
           <Route path="/exhibitions" exact>
             <Exhibitions />
           </Route>
-          <Route path="/prostor" exact>
-            <Prostor />
+          <Route path="/space" exact>
+            <Space />
           </Route>
           <Route path="/tickets" exact>
             <Tickets />
