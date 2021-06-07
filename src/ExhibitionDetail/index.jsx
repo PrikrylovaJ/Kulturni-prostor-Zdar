@@ -49,26 +49,35 @@ export const ExhibitionDetail = () => {
 
   return (
     exhibition ? (
-      <div>
-          <h2>{exhibition.author}</h2>
-          <p>{exhibition.dateFrom.toDate().toLocaleDateString()} - {exhibition.dateTo.toDate().toLocaleDateString()}</p>
-          {exhibition.text}
-          {exhibition.text1}
-          <Link to="/tickets">Vstupenky</Link>
-            <ImageGallery
-              items={images}
-              showThumbnails={false}
-              showFullscreenButton={false}
-              showPlayButton={false}
-            />
-          {reviews.map((item) => (
-            <div key={item.id}>
-              <div>{item.name}</div>
-              <div>{item.text}</div>
-              <div>{item.date?.toDate().toLocaleDateString()}</div>
-            </div>
-          ))}
+      <main>
+        <div className="exhibition-detail">
+          <div className="exhibition-detail__content">
+              <h2>{exhibition.author}</h2>
+              <p>{exhibition.dateFrom.toDate().toLocaleDateString()} - {exhibition.dateTo.toDate().toLocaleDateString()}</p>
+              <p>{exhibition.text}</p>
+              <p>{exhibition.text1}</p>
+              <Link class="ticket" to="/tickets">Vstupenky</Link>
+          </div>
+          <div className="exhibition-detail__gallery">
+              <ImageGallery
+                items={images}
+                showThumbnails={false}
+                showFullscreenButton={false}
+                showPlayButton={false}
+              />
+          </div>
+          <div className="exhibition-detail__review">
+          <h3>Recenze</h3>
+            {reviews.map((item) => (
+              <div key={item.id}>
+                <div>{item.text}</div>
+                <div>{item.name}</div>
+                <div>{item.date?.toDate().toLocaleDateString()}</div>
+              </div>
+            ))}
           <Form exhibitionId={idExhibition}/>
-          </div>) : ('')
+          </div>
+        </div>
+      </main>) : ('')
   );
 };
