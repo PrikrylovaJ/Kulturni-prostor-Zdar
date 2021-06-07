@@ -12,18 +12,18 @@ export const ExhibitionCard = ({image, author, title, dateTo, dateFrom, place, i
 
 
   return (
-    <div className="exhibition-card">
-      <img
-        className="exhibition-card__image"
-        src={photoURL}
-        alt=""
-      />
-      <Link className="exhibition-card__author" to={"exhibitions/" + id}>
-        {author}
-      </Link>
-      <p className="exhibition-card__title">{title}</p>
-      <p className="exhibition-card__date">{dateFrom.toLocaleDateString()} - {dateTo.toLocaleDateString()}</p>
-      <p className="exhibition-card__place">{place}</p>
-    </div>
+      <div className="exhibition-card">
+        <img
+          className="exhibition-card__image"
+          src={photoURL}
+          alt=""
+        />
+        <Link className="exhibition-card__author" to={"exhibitions/" + id}>
+          {author}
+        </Link>
+        <p className="exhibition-card__title">{title}</p>
+        <p className="exhibition-card__date">{dateFrom.toLocaleDateString()} - {dateTo.toLocaleDateString()}</p>
+        <p className="exhibition-card__place">{place}</p>
+      </div>
   );
 };
