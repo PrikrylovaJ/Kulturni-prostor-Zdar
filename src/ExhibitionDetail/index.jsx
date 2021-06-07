@@ -49,27 +49,18 @@ export const ExhibitionDetail = () => {
 
   return (
     exhibition ? (
-    <div className="container">
-      <div className="exhibition-detail__container">
-        <div className="exhibition-detail__content">
+      <div>
           <h2>{exhibition.author}</h2>
           <p>{exhibition.dateFrom.toDate().toLocaleDateString()} - {exhibition.dateTo.toDate().toLocaleDateString()}</p>
           {exhibition.text}
+          {exhibition.text1}
           <Link to="/tickets">Vstupenky</Link>
-        </div>
-        <div className="exhibition-detail__gallery">
-          <div className="image-gallery">
             <ImageGallery
               items={images}
               showThumbnails={false}
               showFullscreenButton={false}
               showPlayButton={false}
             />
-          </div>
-        </div>
-      </div>
-      <div className="exhibition-detail__container">
-        <div className="exhibition-detail__review">
           {reviews.map((item) => (
             <div key={item.id}>
               <div>{item.name}</div>
@@ -77,13 +68,7 @@ export const ExhibitionDetail = () => {
               <div>{item.date?.toDate().toLocaleDateString()}</div>
             </div>
           ))}
-        </div>
-      </div>
-      <div className="exhibition-detail__container">
-        <div className="exhibition-detail__form">
           <Form exhibitionId={idExhibition}/>
-        </div>
-      </div>
-    </div>) : ('')
+          </div>) : ('')
   );
 };
