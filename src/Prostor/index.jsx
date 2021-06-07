@@ -61,13 +61,13 @@ export const Prostor = () => {
               vaším hostům.
             </p>
             <section className="galerie">
-              <figure className="foto">
+              <figure className="foto vetsi">
                 <img
                   src="./assets/Prostor/cafe1.jpg"
                   alt="Interier kavarny"
                 ></img>
               </figure>
-              <figure className="foto">
+              <figure className="foto vetsi">
                 <img
                   src="./assets/Prostor/vafle_dzus.jpg"
                   alt="zatisi s vafli a domacim dzusem"
@@ -92,9 +92,35 @@ export const Prostor = () => {
                   alt="pulitr cerstve nacepovaneho piva PU"
                 ></img>
               </figure>
+              <figure className="foto">
+                <img src="./assets/Prostor/raut2.jpg" alt="rautovy stul"></img>
+              </figure>
             </section>
             <h2>Máte zájem?</h2>
-            <p>tady bude formular</p>
+            <p>
+              S otázkami na pořádání akcí či dotazem na volné termíny nás prosím
+              kontaktuje přes formulář nebo rovnou na kontakty níže.
+            </p>
+            <br />
+            <div className="form">
+              <form method="post" action="http://formular.itgirls.cz/">
+                <label>
+                  Váš e-mail:
+                  <br />
+                  <br />
+                  <input type="email" name="email" />
+                </label>
+                <br />
+                <label className="user_message">
+                  Zpráva:
+                  <br />
+                  <br />
+                  <textarea name="body" rows="4" cols="30"></textarea>
+                </label>
+                <br />
+                <button type="submit">Odeslat</button>
+              </form>
+            </div>
             {/*
             <div className="team__container">
               <div className="team__member">
