@@ -35,7 +35,7 @@ export const Homepage = () => {
                   {/* <img src="/assets/Ostatní/arrow.png" width="50px" alt="" />*/}
 
                   <img
-                    src="/assets/Adelheid Ka/AdelheidKa4.jpg"
+                    src="/assets/Space/interier1.jpg"
                     alt="obrazek_interieru"
                   />
                 </Link>

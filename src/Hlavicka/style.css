@@ -35,6 +35,7 @@
 
 .hlavicka__logo::before {
   content: url('kostka.png');
+  vertical-align: -10px;
 }
 
 .hlavicka__logo a {
