@@ -1,8 +1,6 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding-right: 15px;
-  padding-left: 15px;
   max-width: 1000px;
   margin: 0 auto;
   padding-top: 25px;
@@ -13,7 +11,7 @@
 }
 
 .footer__email__phone {
-  text-align: right;
+  text-align: left;
 }
 
 .footer__email__phone a {
@@ -23,13 +21,12 @@
 
 @media (min-width: 576px) {
   .footer {
-    padding: 0 45px;
-    margin-top: 50px;
+    padding: 15px 45px;
   }
 
   .footer__address {
     display: block;
-    text-align: left;
+    text-align: right;
   }
 
   .footer__address p {
