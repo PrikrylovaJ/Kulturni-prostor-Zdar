@@ -56,7 +56,7 @@ export const ExhibitionDetail = () => {
               <p>{exhibition.dateFrom.toDate().toLocaleDateString()} - {exhibition.dateTo.toDate().toLocaleDateString()}</p>
               <p>{exhibition.text}</p>
               <p>{exhibition.text1}</p>
-              <Link class="ticket" to="/tickets">Vstupenky</Link>
+              <Link class="exhibition-detail__ticket" to="/tickets">Vstupenky</Link>
           </div>
           <div className="exhibition-detail__gallery">
               <ImageGallery
@@ -66,17 +66,20 @@ export const ExhibitionDetail = () => {
                 showPlayButton={false}
               />
           </div>
-          <div className="exhibition-detail__review">
-          <h3>Recenze</h3>
-            {reviews.map((item) => (
-              <div key={item.id}>
-                <div>{item.text}</div>
-                <div>{item.name}</div>
-                <div>{item.date?.toDate().toLocaleDateString()}</div>
-              </div>
-            ))}
+        </div>
+        <div className="exhibition-detail__review">
+          <h2>Recenze</h2>
+          <hr class="exhibition-detail__divider"/>
+            <div className="exhibition-detail__messeage">
+              {reviews.map((item) => (
+                <div key={item.id}>
+                  <div>{item.text}</div>
+                  <div>{item.name}</div>
+                  <div>{item.date?.toDate().toLocaleDateString()}</div>
+                </div>
+              ))}
+            </div>
           <Form exhibitionId={idExhibition}/>
-          </div>
         </div>
       </main>) : ('')
   );

@@ -18,20 +18,24 @@ export const Form = ({exhibitionId}) => {
   return (
     <>
       <form onSubmit={handleSubmit}>
+      <h3>Napiš recenzi:</h3>
         <label>
           Text:
-          <input
+          <br/>
+          <textarea
           value={text} 
           onChange={(event) => setText(event.target.value)} type="text" 
           />
         </label>
          <label>
           Jméno a Příjmení:
-          <input 
+          <br/>
+          <input
           value={name} 
           onChange={(event) => setName(event.target.value)} type="text" 
           />
         </label>
+        <br/>
         <button>Přidat recenzi</button>
       </form>
     </>
