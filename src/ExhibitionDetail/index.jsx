@@ -51,6 +51,10 @@ export const ExhibitionDetail = () => {
       });
   }, []);
 
+  const handleClick = () => {
+    alert('Ahoj');
+  };
+
   return exhibition ? (
     <main>
       <div className="exhibition-detail">
@@ -88,6 +92,11 @@ export const ExhibitionDetail = () => {
           ))}
         </div>
         <Form exhibitionId={idExhibition} />
+      </div>
+      <div className="btn_parent">
+        <Link className="exhibition-detail__back" to="/exhibitions">
+          Zpět na přehled výstav
+        </Link>
       </div>
     </main>
   ) : (
