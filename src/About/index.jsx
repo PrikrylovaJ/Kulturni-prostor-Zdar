@@ -35,9 +35,13 @@ export const About = () => {
               oblastí. Nikdy jsem českou výtvarnou scénu nepřestala sledovat,
               nikdy mě nepřestala bavit ani překvapovat!
             </p>
+            <a href="https://www.linkedin.com/in/jana-voborska-dostalova-14a2642a/">
+              <img className="linkedin" src="./assets/Ostatni/linkedin.png" />
+            </a>
           </div>
           <div className="about-card">
             <h2 className="about-card__person">Jana Přikrylová</h2>
+
             <img
               className="about-card__photo"
               src="./assets/Ostatni/JP.jpg"
@@ -45,12 +49,16 @@ export const About = () => {
               height="180px"
               alt=""
             />
+
             <p className="about-card__info">
               Po základní škole jsem chtěla malovat. Nakonec mé kariérní cesty
               směřovaly do financí, ale zájem o umění přetrval formou kurzů
               malování a navštěvování výstav. Potřeba něco tvořit mě přivedla k
               mé nové zálibě v programování. Těším se na spojení obou.
             </p>
+            <a href="https://www.linkedin.com/in/jana-p%C5%99ikrylov%C3%A1-1a5955108/">
+              <img className="linkedin" src="./assets/Ostatni/linkedin.png" />
+            </a>
           </div>
         </div>
       </div>

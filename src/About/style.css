@@ -31,6 +31,7 @@
   margin-bottom: 15px;
   padding: 20px;
   font-size: 20px;
+  position: relative;
 }
 
 .about-card__photo {
@@ -40,6 +41,12 @@
 
 .about-card__info {
   padding: 24px;
+}
+
+.linkedin {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 @media screen and (min-width: 991px) {
