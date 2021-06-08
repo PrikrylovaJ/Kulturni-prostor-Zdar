@@ -51,10 +51,6 @@ export const ExhibitionDetail = () => {
       });
   }, []);
 
-  const handleClick = () => {
-    alert('Ahoj');
-  };
-
   return exhibition ? (
     <main>
       <div className="exhibition-detail">
@@ -81,7 +77,7 @@ export const ExhibitionDetail = () => {
       </div>
       <div className="exhibition-detail__review">
         <h2>Recenze</h2>
-        <hr class="exhibition-detail__divider" />
+        <hr className="exhibition-detail__divider" />
         <div className="exhibition-detail__messeage">
           {reviews.map((item) => (
             <div key={item.id}>
