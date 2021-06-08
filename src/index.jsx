@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 import { Homepage } from './Home';
 import { Header } from './Header';
 import { Kontakt } from './Kontakt';
-import { Onas } from './O nas';
+import { About } from './About';
 import { Exhibitions } from './Exhibitions';
 import { ExhibitionDetail } from './ExhibitionDetail';
 import { Footer } from './Footer';
@@ -25,7 +25,7 @@ const App = () => {
             <Kontakt />
           </Route>
           <Route path="/about-us" exact>
-            <Onas />
+            <About />
           </Route>
           <Route path="/exhibitions" exact>
             <Exhibitions />

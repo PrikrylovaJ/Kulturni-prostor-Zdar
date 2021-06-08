@@ -1,0 +1,49 @@
+/*@media screen and (min-width: 576px) {
+  .mp {
+    text-align: right;
+  }
+}
+
+ <div className="visit__cards">
+            <div className="jana_v"></div>
+            <div className="jana_p"></div>
+          </div>
+
+ .visit__cards {
+  display: flex;
+}         
+*/
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.about-card {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid rgb(81, 81, 140);
+  border-radius: 2%;
+  margin-bottom: 15px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.about-card__photo {
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.about-card__info {
+  padding: 24px;
+}
+
+@media screen and (min-width: 991px) {
+  .about-card {
+    max-width: 400px;
+  }
+}
