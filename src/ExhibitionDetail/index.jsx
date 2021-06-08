@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../db';
 import { storage } from '../db';
-import { Form } from '../Formular';
-import { exhibitions } from '../Data';
+import { Form } from '../Form';
 import './style.css';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';

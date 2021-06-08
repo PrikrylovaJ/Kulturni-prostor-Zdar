@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { render } from 'react-dom';
 import { Homepage } from './Home';
-import { Hlavicka } from './Hlavicka';
+import { Header } from './Header';
 import { Kontakt } from './Kontakt';
 import { Onas } from './O nas';
 import { Exhibitions } from './Exhibitions';
@@ -16,15 +16,15 @@ const App = () => {
   return (
     <div className="app__container">
       <Router>
-        <Hlavicka />
+        <Header />
         <Switch>
           <Route path="/" exact>
             <Homepage />
           </Route>
-          <Route path="/kontakt" exact>
+          <Route path="/contact" exact>
             <Kontakt />
           </Route>
-          <Route path="/o-nas" exact>
+          <Route path="/about-us" exact>
             <Onas />
           </Route>
           <Route path="/exhibitions" exact>

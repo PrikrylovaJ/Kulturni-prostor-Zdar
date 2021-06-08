@@ -1,4 +1,4 @@
-.hlavicka__container {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,7 +7,7 @@
   max-width: 100%;
 }
 
-.hlavicka__navigace {
+.header__navigation {
   position: absolute;
   top: 50px;
   right: 0;
@@ -18,7 +18,7 @@
   height: 100%;
 }
 
-.hlavicka__navigace a {
+.header__navigation a {
   padding: 5px;
   padding-top: 15px;
   text-decoration: none;
@@ -28,22 +28,22 @@
   font-size: 20px;
 }
 
-.hlavicka__logo {
+.header__logo {
   font-weight: bold;
   font-size: 20px;
 }
 
-.hlavicka__logo::before {
+.header__logo::before {
   content: url('kostka.png');
   vertical-align: -10px;
 }
 
-.hlavicka__logo a {
+.header__logo a {
   text-decoration: none;
   color: rgb(81, 81, 140);
 }
 
-.hlavicka h1 {
+.header h1 {
   font-size: 50px;
 }
 
@@ -52,20 +52,20 @@ button.hamburger {
 }
 
 @media (max-width: 575px) {
-  .hlavicka__navigace--zavreno {
+  .header__navigation--closed {
     display: none;
   }
 }
 
 @media (min-width: 576px) {
-  .hlavicka__navigace {
+  .header__navigation {
     position: static;
     flex-direction: row;
     justify-content: space-between;
     max-width: 100%;
   }
 
-  .hlavicka__hamburger {
+  .header__hamburger {
     display: none;
   }
 }

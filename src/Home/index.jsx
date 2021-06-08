@@ -21,8 +21,6 @@ export const Homepage = () => {
               <div className="homepage_section exhibitions">
                 <Link to="/exhibitions">
                   <h2>Výstavy</h2>
-                  {/*<img src="/assets/Ostatni/arrow.png" alt="" />*/}
-
                   <img
                     src="/assets/Adelheid Ka/AdelheidKa3.jpg"
                     alt="obrazek_vystavy"
@@ -32,8 +30,6 @@ export const Homepage = () => {
               <div className="homepage_section prostor">
                 <Link to="/space">
                   <h2>Pronájem prostor</h2>
-                  {/* <img src="/assets/Ostatní/arrow.png" width="50px" alt="" />*/}
-
                   <img
                     src="/assets/Space/interier1.jpg"
                     alt="obrazek_interieru"
@@ -42,8 +38,6 @@ export const Homepage = () => {
               </div>
               <div className="homepage_section courses">
                 <h2>Kurzy</h2>
-                {/*<img src="/assets/Ostatni/arrow.png" width="50px" alt="" />*/}
-
                 <img
                   src="/assets/Ostatni/courses.jpg"
                   alt="obrazek_vytvarneho_kurzu"
