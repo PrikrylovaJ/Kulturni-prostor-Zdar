@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
-import { HamburgerButton } from '../HamburgerButton';
+import { HamburgerButton } from './HamburgerButton';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +33,9 @@ export const Header = () => {
                 }
               >
                 <Link to="/">Domů</Link>
+                <Link to="/exhibitions">Výstavy</Link>
+                <Link to="/space">Pronájem</Link>
+                <Link to="/courses">Kurzy</Link>
                 <Link to="/contact">Kontakt</Link>
                 <Link to="/about-us">O nás</Link>
               </nav>
