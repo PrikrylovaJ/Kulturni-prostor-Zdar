@@ -102,22 +102,34 @@ export const Space = () => {
             </p>
             <br />
             <div className="form">
-              <form method="post" action="http://formular.itgirls.cz/">
+              <form
+                method="post"
+                action="http://formular.itgirls.cz/"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  alert('Odesláno!');
+                }}
+              >
                 <label>
                   Váš e-mail:
                   <br />
-                  <br />
-                  <input type="email" name="email" />
+                  <input className="user_email" type="email" name="email" />
                 </label>
                 <br />
-                <label className="user_message">
+                <label>
                   Zpráva:
                   <br />
-                  <br />
-                  <textarea name="body" rows="4" cols="30"></textarea>
+                  <textarea
+                    className="user_message"
+                    name="body"
+                    rows="4"
+                    cols="30"
+                  ></textarea>
                 </label>
                 <br />
-                <button type="submit">Odeslat</button>
+                <button className="btn" type="submit">
+                  Odeslat
+                </button>
               </form>
             </div>
           </div>
