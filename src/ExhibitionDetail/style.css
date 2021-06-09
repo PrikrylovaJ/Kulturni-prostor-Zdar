@@ -46,14 +46,14 @@
 .exhibition-detail__review {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 15px;
-  /* border: 1px solid black; */
   padding-bottom: 10px;
 }
 
 .exhibition-detail__messeage {
   border: 1px solid rgb(209, 206, 206);
-  /* border-style: dashed; */
   border-radius: 7px;
+  padding: 5px;
+  margin-bottom: 5px;
 }
 
 .exhibition-detail__divider {

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {db} from '../db';
+import {db} from '../../db';
 import './style.css';
 
 export const Form = ({exhibitionId}) => {
@@ -13,6 +13,8 @@ export const Form = ({exhibitionId}) => {
       text: text,
       date: new Date()
     })
+    setText('');
+    setName('');
   }
  
   return (
@@ -30,7 +32,7 @@ export const Form = ({exhibitionId}) => {
          <label>
           Jméno a Příjmení:
           <br/>
-          <input
+          <textarea
           value={name} 
           onChange={(event) => setName(event.target.value)} type="text" 
           />

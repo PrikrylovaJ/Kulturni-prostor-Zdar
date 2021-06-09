@@ -1,7 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style.css';
+import {db} from './../db';
 
 export const Space = () => {
+  const [email, setEmail] = useState('');
+  const [messeage, setMesseage] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    db.collection('space').add({
+      email: email,
+      messeage: messeage,
+    })
+    setEmail('');
+    setMesseage('');
+  }
+
   return (
     <main>
       <div className="contact__content">
@@ -102,24 +116,17 @@ export const Space = () => {
             </p>
             <br />
             <div className="form">
-              <form
-                method="post"
-                action="http://formular.itgirls.cz/"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  alert('Odesláno!');
-                }}
-              >
+              <form onSubmit={handleSubmit}>
                 <label>
                   Váš e-mail:
                   <br />
-                  <input className="user_email" type="email" name="email" />
+                  <input value={email} onChange={(event) => setEmail(event.target.value)} className="user_email" type="email" name="email" />
                 </label>
                 <br />
                 <label>
                   Zpráva:
                   <br />
-                  <textarea
+                  <textarea value={messeage} onChange={(event) => setMesseage(event.target.value)}
                     className="user_message"
                     name="body"
                     rows="4"

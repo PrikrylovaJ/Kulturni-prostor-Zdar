@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../db';
 import { storage } from '../db';
-import { Form } from '../Form';
+import { Form } from '../Exhibitions/Form';
 import './style.css';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -39,6 +39,7 @@ export const ExhibitionDetail = () => {
     db.collection('exhibitions')
       .doc(idExhibition)
       .collection('reviews')
+      .orderBy('date')
       .onSnapshot((snapshot) => {
         snapshot.docs.forEach((doc) => {});
         setReview(
@@ -78,20 +79,18 @@ export const ExhibitionDetail = () => {
       <div className="exhibition-detail__review">
         <h2>Recenze</h2>
         <hr className="exhibition-detail__divider" />
-        <div className="exhibition-detail__messeage">
           {reviews.map((item) => (
-            <div key={item.id}>
+            <div className="exhibition-detail__messeage" key={item.id}>
               <div>{item.text}</div>
               <div>{item.name}</div>
               <div>{item.date?.toDate().toLocaleDateString()}</div>
             </div>
           ))}
-        </div>
         <Form exhibitionId={idExhibition} />
       </div>
       <div className="btn_parent">
         <Link className="exhibition-detail__back" to="/exhibitions">
-          Zpět na přehled výstav
+          VÝSTAVY
         </Link>
       </div>
     </main>
