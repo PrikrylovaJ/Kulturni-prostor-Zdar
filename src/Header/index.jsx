@@ -25,7 +25,7 @@ export const Header = () => {
                   onClick={handleClickHamburger}
                 />
               </div>
-              <nav
+              <nav onClick={() => setIsOpen(false)}
                 className={
                   isOpen
                     ? 'header__navigation'

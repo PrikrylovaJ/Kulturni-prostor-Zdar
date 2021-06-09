@@ -27,6 +27,7 @@
   font-size: 20px;
   background-color: white;
   border: 1px solid rgb(152, 152, 189);
+  z-index: 1000;
 }
 
 .header__logo {
