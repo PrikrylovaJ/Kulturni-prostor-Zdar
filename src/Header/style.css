@@ -9,12 +9,12 @@
 
 .header__navigation {
   position: absolute;
-  top: 65px;
+  top: 70px;
   right: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
-  text-align: right;
+  text-align: center;
   height: 100%;
 }
 
@@ -28,6 +28,11 @@
   background-color: white;
   border: 1px solid rgb(152, 152, 189);
   z-index: 1000;
+}
+
+.header__navigation a:hover,
+.header__navigation a:focus {
+  color: rgb(152, 152, 189);
 }
 
 .header__logo {
