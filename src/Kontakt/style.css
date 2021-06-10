@@ -1,5 +1,5 @@
 .contacts {
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   justify-content: start;
 }
@@ -30,7 +30,7 @@ hr {
 
 .contact__address {
   margin-top: 40px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 @media (min-width: 576px) {
