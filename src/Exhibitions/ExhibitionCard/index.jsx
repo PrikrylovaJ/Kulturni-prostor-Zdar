@@ -25,7 +25,11 @@ export const ExhibitionCard = ({
     <div className="exhibition-card">
       <Link className="exhibition-card__author" to={'exhibitions/' + id}>
         {' '}
-        <img className="exhibition-card__image" src={photoURL} alt="" />
+        <img
+          className="exhibition-card__image"
+          src={photoURL}
+          alt="titulni_obrazek_vystavy"
+        />
         {author}
       </Link>
       {/* <p className="exhibition-card__title">{title}</p> */}

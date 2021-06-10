@@ -34,6 +34,7 @@ export const Space = () => {
               <img
                 className="icon"
                 src="./assets/space/iconmonstr-smiley-10-240.png"
+                alt="smiley_icon"
               ></img>
             </p>
             <section className="galerie">

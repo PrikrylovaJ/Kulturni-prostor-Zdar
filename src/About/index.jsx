@@ -26,7 +26,7 @@ export const About = () => {
               src="./assets/Ostatni/JV.jpg"
               width="180px"
               height="180px"
-              alt=""
+              alt="profilove_foto_JanyV"
             />
             <p className="about-card__info">
               Vyrůstala jsem v uměleckém prostředí, a ač se moje profesní dráha
@@ -36,10 +36,18 @@ export const About = () => {
               nikdy mě nepřestala bavit ani překvapovat!
             </p>
             <a href="https://www.facebook.com/Kikulinka01/">
-              <img className="facebook" src="./assets/Ostatni/facebook.png" />
+              <img
+                className="facebook"
+                src="./assets/Ostatni/facebook.png"
+                alt="icon_facebook"
+              />
             </a>
             <a href="https://www.linkedin.com/in/jana-voborska-dostalova-14a2642a/">
-              <img className="linkedin" src="./assets/Ostatni/linkedin.png" />
+              <img
+                className="linkedin"
+                src="./assets/Ostatni/linkedin.png"
+                alt="icon_linkedin"
+              />
             </a>
           </div>
           <div className="about-card">
@@ -50,7 +58,7 @@ export const About = () => {
               src="./assets/Ostatni/JP.jpg"
               width="180px"
               height="180px"
-              alt=""
+              alt="profilove_foto_JanyP"
             />
 
             <p className="about-card__info">
@@ -60,10 +68,18 @@ export const About = () => {
               mé nové zálibě v programování. Těším se na spojení obou.
             </p>
             <a href="#">
-              <img className="facebook" src="./assets/Ostatni/facebook.png" />
+              <img
+                className="facebook"
+                src="./assets/Ostatni/facebook.png"
+                alt="icon_facebook"
+              />
             </a>
             <a href="https://www.facebook.com/jana.prikrylova.12">
-              <img className="linkedin" src="./assets/Ostatni/linkedin.png" />
+              <img
+                className="linkedin"
+                src="./assets/Ostatni/linkedin.png"
+                alt="icon_linkedin"
+              />
             </a>
           </div>
         </div>
