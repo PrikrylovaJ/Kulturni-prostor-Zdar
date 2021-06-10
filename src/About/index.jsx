@@ -35,7 +35,7 @@ export const About = () => {
               oblastí. Nikdy jsem českou výtvarnou scénu nepřestala sledovat,
               nikdy mě nepřestala bavit ani překvapovat!
             </p>
-            <a href="#">
+            <a href="https://www.facebook.com/Kikulinka01/">
               <img className="facebook" src="./assets/Ostatni/facebook.png" />
             </a>
             <a href="https://www.linkedin.com/in/jana-voborska-dostalova-14a2642a/">
@@ -62,7 +62,7 @@ export const About = () => {
             <a href="#">
               <img className="facebook" src="./assets/Ostatni/facebook.png" />
             </a>
-            <a href="https://www.linkedin.com/in/jana-p%C5%99ikrylov%C3%A1-1a5955108/">
+            <a href="https://www.facebook.com/jana.prikrylova.12">
               <img className="linkedin" src="./assets/Ostatni/linkedin.png" />
             </a>
           </div>

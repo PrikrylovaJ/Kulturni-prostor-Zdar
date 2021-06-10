@@ -1,33 +1,22 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
-=======
-import React, {useState} from 'react';
->>>>>>> 87258f5b9e66838a6c0e5b2fef56066eff28cf77
 import './style.css';
-import {db} from './../db';
+import { db } from './../db';
 
 export const Space = () => {
-<<<<<<< HEAD
-  const [sent, setSent] = useState('');
-
-  const handleSubmit = (e) => {
-    setSent(e.target.checked);
-    e.preventDefault();
-  };
-=======
   const [email, setEmail] = useState('');
   const [messeage, setMesseage] = useState('');
+  const [sent, setSent] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     db.collection('space').add({
       email: email,
       messeage: messeage,
-    })
+    });
     setEmail('');
     setMesseage('');
-  }
->>>>>>> 87258f5b9e66838a6c0e5b2fef56066eff28cf77
+    setSent('');
+  };
 
   return (
     <main>
@@ -129,25 +118,25 @@ export const Space = () => {
             </p>
             <br />
             <div className="form">
-<<<<<<< HEAD
-              <form
-                method="post"
-                action="http://formular.itgirls.cz/"
-                onSubmit={handleSubmit}
-              >
-=======
               <form onSubmit={handleSubmit}>
->>>>>>> 87258f5b9e66838a6c0e5b2fef56066eff28cf77
                 <label>
                   Váš e-mail:
                   <br />
-                  <input value={email} onChange={(event) => setEmail(event.target.value)} className="user_email" type="email" name="email" />
+                  <input
+                    value={email}
+                    onChange={(event) => setEmail(event.target.value)}
+                    className="user_email"
+                    type="email"
+                    name="email"
+                  />
                 </label>
                 <br />
                 <label>
                   Zpráva:
                   <br />
-                  <textarea value={messeage} onChange={(event) => setMesseage(event.target.value)}
+                  <textarea
+                    value={messeage}
+                    onChange={(event) => setMesseage(event.target.value)}
                     className="user_message"
                     name="body"
                     rows="4"
@@ -158,7 +147,12 @@ export const Space = () => {
                 <button className="btn" type="submit">
                   Odeslat
                 </button>
-                <div style={{ display: setSent === '' ? 'none' : 'block' }}>
+                <div
+                  style={{
+                    display: sent === false ? 'none' : 'block',
+                    fontSize: '18px',
+                  }}
+                >
                   Děkujeme za dotaz, byl odeslán do naší emailové schránky.
                 </div>
               </form>

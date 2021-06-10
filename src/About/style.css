@@ -49,6 +49,12 @@
   right: 10px;
 }
 
+.facebook {
+  position: absolute;
+  bottom: 10px;
+  right: 70px;
+}
+
 @media screen and (min-width: 991px) {
   .about-card {
     max-width: 400px;
