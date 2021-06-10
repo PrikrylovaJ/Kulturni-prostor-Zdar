@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 
 export const Space = () => {
+  const [sent, setSent] = useState('');
+
+  const handleSubmit = (e) => {
+    setSent(e.target.checked);
+    e.preventDefault();
+  };
+
   return (
     <main>
       <div className="contact__content">
@@ -105,10 +112,7 @@ export const Space = () => {
               <form
                 method="post"
                 action="http://formular.itgirls.cz/"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  alert('Odesláno!');
-                }}
+                onSubmit={handleSubmit}
               >
                 <label>
                   Váš e-mail:
@@ -130,6 +134,9 @@ export const Space = () => {
                 <button className="btn" type="submit">
                   Odeslat
                 </button>
+                <div style={{ display: setSent === '' ? 'none' : 'block' }}>
+                  Děkujeme za dotaz, byl odeslán do naší emailové schránky.
+                </div>
               </form>
             </div>
           </div>

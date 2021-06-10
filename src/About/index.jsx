@@ -35,6 +35,9 @@ export const About = () => {
               oblastí. Nikdy jsem českou výtvarnou scénu nepřestala sledovat,
               nikdy mě nepřestala bavit ani překvapovat!
             </p>
+            <a href="#">
+              <img className="facebook" src="./assets/Ostatni/facebook.png" />
+            </a>
             <a href="https://www.linkedin.com/in/jana-voborska-dostalova-14a2642a/">
               <img className="linkedin" src="./assets/Ostatni/linkedin.png" />
             </a>
@@ -56,6 +59,9 @@ export const About = () => {
               malování a navštěvování výstav. Potřeba něco tvořit mě přivedla k
               mé nové zálibě v programování. Těším se na spojení obou.
             </p>
+            <a href="#">
+              <img className="facebook" src="./assets/Ostatni/facebook.png" />
+            </a>
             <a href="https://www.linkedin.com/in/jana-p%C5%99ikrylov%C3%A1-1a5955108/">
               <img className="linkedin" src="./assets/Ostatni/linkedin.png" />
             </a>
