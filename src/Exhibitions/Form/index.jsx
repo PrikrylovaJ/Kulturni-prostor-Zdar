@@ -32,6 +32,7 @@ export const Form = ({ exhibitionId }) => {
             type="text"
           />
         </label>
+        <br />
         <label>
           Jméno a Příjmení:
           <br />
