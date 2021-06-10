@@ -22,7 +22,7 @@ export const Homepage = () => {
                 <Link to="/exhibitions">
                   <h2>Výstavy</h2>
                   <img
-                    src="/assets/Adelheid Ka/AdelheidKa3.jpg"
+                    src="/assets/Ostatni/AdelheidKa3.jpg"
                     alt="obrazek_vystavy"
                   />
                 </Link>

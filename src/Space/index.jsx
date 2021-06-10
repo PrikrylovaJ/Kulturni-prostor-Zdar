@@ -1,13 +1,33 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
+=======
+import React, {useState} from 'react';
+>>>>>>> 87258f5b9e66838a6c0e5b2fef56066eff28cf77
 import './style.css';
+import {db} from './../db';
 
 export const Space = () => {
+<<<<<<< HEAD
   const [sent, setSent] = useState('');
 
   const handleSubmit = (e) => {
     setSent(e.target.checked);
     e.preventDefault();
   };
+=======
+  const [email, setEmail] = useState('');
+  const [messeage, setMesseage] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    db.collection('space').add({
+      email: email,
+      messeage: messeage,
+    })
+    setEmail('');
+    setMesseage('');
+  }
+>>>>>>> 87258f5b9e66838a6c0e5b2fef56066eff28cf77
 
   return (
     <main>
@@ -103,27 +123,31 @@ export const Space = () => {
               </figure>
             </section>
             <h2 className="interest">Máte zájem?</h2>
-            <p>
+            <p className="form__text">
               S otázkami na pořádání akcí či dotazem na volné termíny nás prosím
               kontaktuje přes formulář nebo rovnou na kontakty níže.
             </p>
             <br />
             <div className="form">
+<<<<<<< HEAD
               <form
                 method="post"
                 action="http://formular.itgirls.cz/"
                 onSubmit={handleSubmit}
               >
+=======
+              <form onSubmit={handleSubmit}>
+>>>>>>> 87258f5b9e66838a6c0e5b2fef56066eff28cf77
                 <label>
                   Váš e-mail:
                   <br />
-                  <input className="user_email" type="email" name="email" />
+                  <input value={email} onChange={(event) => setEmail(event.target.value)} className="user_email" type="email" name="email" />
                 </label>
                 <br />
                 <label>
                   Zpráva:
                   <br />
-                  <textarea
+                  <textarea value={messeage} onChange={(event) => setMesseage(event.target.value)}
                     className="user_message"
                     name="body"
                     rows="4"

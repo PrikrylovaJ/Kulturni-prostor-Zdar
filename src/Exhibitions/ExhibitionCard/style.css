@@ -1,7 +1,6 @@
 .exhibition-card {
   width: 100%;
-  font-size: 15px;
-  font-size: 15px;
+  font-size: 16px;
   padding: 20px 3px;
 }
 
@@ -13,7 +12,7 @@
 
 .exhibition-card__author {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   color: rgb(134, 134, 196);
   margin-top: 5px;
@@ -31,10 +30,4 @@
   }
 }
 
-@media (min-width: 991px) {
-  .exhibition-card__title,
-  .exhibition-card__date,
-  .exhibition-card__place {
-    font-size: 17px;
-  }
-}
+
