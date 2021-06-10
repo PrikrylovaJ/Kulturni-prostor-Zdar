@@ -8,7 +8,6 @@ import { About } from './About';
 import { Exhibitions } from './Exhibitions';
 import { ExhibitionDetail } from './ExhibitionDetail';
 import { Footer } from './Footer';
-import { Tickets } from './Tickets';
 import { Space } from './Space';
 import './style.css';
 
@@ -32,9 +31,6 @@ const App = () => {
           </Route>
           <Route path="/space" exact>
             <Space />
-          </Route>
-          <Route path="/tickets" exact>
-            <Tickets />
           </Route>
           <Route path="/exhibitions/:idExhibition" exact>
             <ExhibitionDetail />
