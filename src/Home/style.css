@@ -10,6 +10,11 @@
 
 .homepage_section:hover {
   transform: scale(1.2);
+  color: rgb(152, 152, 189);
+}
+
+.homepage_section a:hover {
+  color: rgb(152, 152, 189);
 }
 
 h1 {
@@ -66,7 +71,6 @@ h2 {
   .homepage__content {
     width: 50%;
   }
-
 }
 
 @media (min-width: 991px) {
@@ -108,4 +112,3 @@ h2 {
     margin-left: 250px;
   }
 }
-
