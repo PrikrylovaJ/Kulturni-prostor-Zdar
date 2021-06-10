@@ -110,7 +110,7 @@ export const Space = () => {
               </figure>
             </section>
             <h2 className="interest">Máte zájem?</h2>
-            <p>
+            <p className="form__text">
               S otázkami na pořádání akcí či dotazem na volné termíny nás prosím
               kontaktuje přes formulář nebo rovnou na kontakty níže.
             </p>

@@ -28,7 +28,7 @@ export const ExhibitionCard = ({
         <img className="exhibition-card__image" src={photoURL} alt="" />
         {author}
       </Link>
-      <p className="exhibition-card__title">{title}</p>
+      {/* <p className="exhibition-card__title">{title}</p> */}
       <p className="exhibition-card__date">
         {dateFrom.toLocaleDateString()} - {dateTo.toLocaleDateString()}
       </p>
