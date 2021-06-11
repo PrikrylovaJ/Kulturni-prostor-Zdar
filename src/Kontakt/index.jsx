@@ -44,6 +44,11 @@ export const Kontakt = () => {
           </div>
         </div>
         <div className="contact__address">
+          <h2>Jak máme otevřeno</h2>
+          <p>Po - Pá: 14.00 - 23.00</p>
+          <p>So: 18.00 - ?</p>
+        </div>
+        <div className="contact__address">
           <h2>Adresa</h2>
           <p>U Vinohradského pivovaru 15</p>
           <p>101 00 Praha 10</p>

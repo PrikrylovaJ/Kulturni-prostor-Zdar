@@ -132,6 +132,7 @@ export const Space = () => {
                   />
                 </label>
                 <br />
+                <br />
                 <label>
                   Zpráva:
                   <br />
