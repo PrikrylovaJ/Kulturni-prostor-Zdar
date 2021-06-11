@@ -13,7 +13,7 @@ export const Header = () => {
   return (
     <>
       <header>
-        <div className="header">
+        <div className="header header__fixed">
           <div className="header__container">
             <div className="header__logo">
               <Link to="/">KPZ.</Link>
@@ -25,7 +25,8 @@ export const Header = () => {
                   onClick={handleClickHamburger}
                 />
               </div>
-              <nav onClick={() => setIsOpen(false)}
+              <nav
+                onClick={() => setIsOpen(false)}
                 className={
                   isOpen
                     ? 'header__navigation'

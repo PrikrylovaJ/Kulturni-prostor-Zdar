@@ -13,7 +13,8 @@ export const About = () => {
               Jsme dvě kamarádky, které dala dohromady společná záliba v
               estetičnu. Máme prostor a chceme propojit komunitu nezávyslých
               výtvarníků a laickou veřejnost. Vytvořit místo, kde se budou dít
-              zajímavé akce a setkávat inspirativní lidé.
+              zajímavé akce a setkávat inspirativní lidé. Takto vznikla myšlenka
+              na náš Kulturní Prostor Zdar jako KPZ kulturního dění.
             </p>
             <hr />
           </div>
