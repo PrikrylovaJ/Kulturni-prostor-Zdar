@@ -32,7 +32,6 @@ export const Exhibitions = () => {
             dateTo={exhibition.dateTo.toDate()}
             dateFrom={exhibition.dateFrom.toDate()}
             place={exhibition.place}
-          
             id={exhibition.id}
             key={exhibition.id}
           />

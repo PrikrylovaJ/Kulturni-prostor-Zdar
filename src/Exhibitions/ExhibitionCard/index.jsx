@@ -6,7 +6,6 @@ import { storage } from '../../db';
 export const ExhibitionCard = ({
   image,
   author,
-  title,
   dateTo,
   dateFrom,
   place,
@@ -32,7 +31,6 @@ export const ExhibitionCard = ({
         />
         {author}
       </Link>
-      {/* <p className="exhibition-card__title">{title}</p> */}
       <p className="exhibition-card__date">
         {dateFrom.toLocaleDateString()} - {dateTo.toLocaleDateString()}
       </p>
