@@ -31,10 +31,10 @@ export const ExhibitionCard = ({
         />
         {author}
       </Link>
-      <p className="exhibition-card__date">
+      <div className="exhibition-card__date">
         {dateFrom.toLocaleDateString()} - {dateTo.toLocaleDateString()}
-      </p>
-      <p className="exhibition-card__place">{place}</p>
+      </div>
+      <div className="exhibition-card__place">{place}</div>
     </div>
   );
 };

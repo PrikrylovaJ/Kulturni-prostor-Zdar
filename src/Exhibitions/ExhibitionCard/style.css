@@ -18,6 +18,13 @@
   margin-top: 5px;
 }
 
+.exhibition-card__author, 
+.exhibition-card__date,
+.exhibition-card__place {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .exhibition-card__author:hover,
 .exhibition-card__author:focus {
   color: rgb(152, 152, 189);
