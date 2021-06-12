@@ -1,18 +1,3 @@
-/*@media screen and (min-width: 576px) {
-  .mp {
-    text-align: right;
-  }
-}
-
- <div className="visit__cards">
-            <div className="jana_v"></div>
-            <div className="jana_p"></div>
-          </div>
-
- .visit__cards {
-  display: flex;
-}         
-*/
 
 .about-container {
   display: flex;
