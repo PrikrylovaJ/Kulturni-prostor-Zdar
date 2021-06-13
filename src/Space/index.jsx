@@ -153,9 +153,10 @@ export const Space = () => {
                   style={{
                     display: sent === false ? 'none' : 'block',
                     fontSize: '18px',
+                    fontWeight: 'bold',
                   }}
                 >
-                  Děkujeme za dotaz, byl odeslán do naší emailové schránky.
+                  Děkujeme za dotaz, co nejdříve na něj odpovíme. 
                 </div>
               </form>
             </div>
