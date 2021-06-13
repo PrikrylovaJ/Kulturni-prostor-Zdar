@@ -26,20 +26,24 @@ export const Form = ({ exhibitionId }) => {
         <label>
           Text:
           <br />
-          <textarea
+          <textarea 
             value={text}
             onChange={(event) => setText(event.target.value)}
             type="text"
+            rows="4"
+            cols="30"
           />
         </label>
         <br />
         <label>
           Jméno a Příjmení:
           <br />
-          <textarea
+          <textarea 
             value={name}
             onChange={(event) => setName(event.target.value)}
             type="text"
+            rows="2"
+            cols="30"
           />
         </label>
         <br />
