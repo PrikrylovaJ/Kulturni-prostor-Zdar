@@ -9,8 +9,6 @@ export const Exhibitions = () => {
 
   useEffect(() => {
     db.collection('exhibitions').onSnapshot((snapshot) => {
-      snapshot.docs.forEach((doc) => {
-      });
       setExhibitions(
         snapshot.docs.map((doc) => {
           const data = doc.data();
